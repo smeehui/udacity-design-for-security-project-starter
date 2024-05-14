@@ -1,13 +1,21 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
-
+- CloudFormation Guard:
+CloudFormation Guard is an open-source tool that allows you to define and enforce rules for AWS CloudFormation templates.
 ### Example vulnerability
+- Inadequate Security Group Rules
+- Unencrypted Amazon S3 Bucket
+- Exposed Database Instance
 
 ##Scan AMI’s or containers for OS vulnerabilities
-
+- Amazon Inspector:
 ### Example vulnerability
+- Outdated OpenSSL Library
+- Weak SSH Configuration
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
-
+- AWS Security Hub
 ### Example vulnerability
+- Unrestricted S3 Bucket Access
+- IAM customer managed policies should not allow decryption actions on all KMS keys

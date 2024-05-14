@@ -1,5 +1,10 @@
 Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
 
 # Poor practice 1
+The configured Network ACLs allows access from anywhere and any ports of the internet.
+This should be avoided since Network ACLs is supposed to be used for controlling and filtering inbound and outbound network traffic, therefore
+can minimalize malicious attacks from the internet and keep the private subnets only for internal access.
 
 # Poor practice 2
+The s3 bucket is not configured to be server-side encryption, therefore its objects are readable and vulnerable once the
+attacker gains the permission to access the bucket.

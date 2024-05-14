@@ -1,3 +1,11 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+1. EC2 instances should use Instance Metadata Service Version 2 (IMDSv2)
+2. EC2 instances should not have a public IPv4 address.
+3. IAM policy, which is administrator full access, is not following the principle of the least privilege.
+4. EC2 instances should be managed by AWS Systems Manager.
 
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+1. Configure EC2 instances with IMDSv2
+2. Use a non-default VPC so that your instance is not assigned a public IP address by default.
+3. Provide those privileges which are essentially enough for user to use each service.
+4. Use Amazon EC2 host management to manage EC2.
